@@ -215,5 +215,166 @@ header{
 
 .box .btn{
   border: 2px solid #ebdbc8;
+  color: #ebdbc8;
 }
 
+.box .btn:hover{
+  background: #ebdbc8;
+  color: var(--second-color);
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.delivery-img,
+.app-img{
+  flex: 1 1 21rem;
+}
+
+.delivery-text,
+.app-text{
+  flex: 1 1 21rem;
+}
+
+.delivery-text h2,
+.app-text h2{
+  font-size: 1.2rem;
+  color: var(--second-color);
+}
+
+.delivery-text p, 
+.app-text p{
+  margin: 0.5rem 0 1rem;
+  text-align: justify;
+}
+
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  background: #ebdbc8;
+  gap: 1.5rem;
+}
+
+.about-img{
+  flex: 1 1 17rem;
+}
+
+.about-text{
+  flex: 1 1 17rem;
+}
+
+.about-text h2{
+  font-size: 1.2rem;
+  color: var(--second-color);
+}
+
+.about-text p{
+  margin: 0.5rem 0 1rem;
+  text-align: justify;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social a{
+  font-size: 27px;
+  margin: 0.5rem;
+}
+
+.social a .bx{
+  padding: 5px;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 50%;
+}
+
+.social a .bx:hover{
+  background: var(--main-color);
+}
+
+.links{
+  margin: 1rem 0 1rem;
+}
+
+.links a{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--second-color);
+  padding: 1rem;
+}
+
+.links a:hover{
+  color: var(--main-color);
+}
+
+.contact p{
+  text-align: center;
+}
+
+@media (max-width: 1150px){
+  header{
+    padding: 18px 7%;
+  }
+
+  section{
+    padding: 50px 7%;
+  }
+
+  .home-text h1{
+    font-size: 3rem;
+  }
+
+  .home-text h2{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px){
+  header{
+    padding: 18px 4%;
+  }
+
+  section{
+    padding: 50px 4%;
+  }
+}
+
+@media (max-width: 768px){
+  header{
+    padding: 11px 4%;
+  }
+  #menu-icon{
+    display: initial;
+  }
+
+  header .navbar{
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+    border-top: 2px solid var(--main-color);
+    transition: 0.2s;
+    text-align: left;
+  }
+
+  .navbar.active{
+    top: 100%;
+  }
+
+  .navbar a{
+    padding: 1.5rem;
+    display: block;
+    color: var(--second-color);
+  }
+}
